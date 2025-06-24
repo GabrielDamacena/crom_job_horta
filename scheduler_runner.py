@@ -13,7 +13,7 @@ def disparar_previsao_clima():
     logging.info("🚀 Iniciando disparo da previsão do clima...")
 
     try:
-        response = requests.post(" http://127.0.0.1:8000/api_horta/previsao-amanha/")
+        response = requests.post(" https://backendhorta.onrender.com/api_horta/previsao-amanha/")
         logging.info(f"✅ Status da resposta: {response.status_code}")
         logging.debug(f"Conteúdo: {response.text}")
     except Exception as e:
